@@ -27,10 +27,12 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -52,6 +54,13 @@ input {
 
 button {
   cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 2px;
 }
 
 .container {
@@ -88,7 +97,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  min-height: 82px;
   gap: 24px;
 }
 
@@ -96,31 +105,31 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.04em;
 }
 
 .brand__mark {
   display: grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: var(--text);
   color: #f7f2ee;
-  font-size: 0.8rem;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 0.86rem;
+  font-family: "Fraunces", serif;
   font-weight: 700;
 }
 
 .brand__text {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
 }
 
 .nav-item {
@@ -130,7 +139,8 @@ button {
 
 .nav-item > a,
 .nav-tool {
-  font-size: 0.83rem;
+  font-size: 0.88rem;
+  font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--muted);
   transition: color 0.2s ease;
@@ -154,8 +164,8 @@ button {
 .mega-menu {
   position: absolute;
   left: 50%;
-  top: calc(100% - 8px);
-  transform: translateX(-50%) translateY(8px);
+  top: calc(100% - 4px);
+  transform: translateX(-50%) translateY(10px);
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 1fr));
   gap: 20px;
@@ -214,7 +224,7 @@ button {
 .mega-menu__promo strong {
   margin: 8px 0;
   font-size: 1.5rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Fraunces", serif;
   line-height: 1;
 }
 
@@ -226,21 +236,22 @@ button {
 .nav-tools {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .nav-tool {
   border: none;
   background: transparent;
-  padding: 10px 0;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight: 600;
 }
 
 .nav-tool--cart {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 10px 14px;
-  border-radius: 999px;
   background: rgba(26, 25, 23, 0.04);
 }
 
@@ -280,9 +291,11 @@ button {
 .section-heading h2,
 .story__content h2,
 .seo__copy h2,
-.promo__content h2 {
+.promo__content h2,
+.category-card__content h3,
+.product-card__body h3 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Fraunces", serif;
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.96;
@@ -312,11 +325,12 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
-  padding: 0 24px;
+  min-height: 54px;
+  padding: 0 28px;
   border-radius: 999px;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .button:hover {
@@ -326,7 +340,7 @@ button {
 .button--primary {
   background: var(--text);
   color: #fff;
-  box-shadow: 0 16px 28px rgba(26, 25, 23, 0.1);
+  box-shadow: 0 16px 28px rgba(26, 25, 23, 0.12);
 }
 
 .button--secondary {
@@ -435,8 +449,8 @@ button {
 }
 
 .text-link {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: var(--muted);
 }
 
@@ -493,9 +507,7 @@ button {
 
 .category-card__content h3 {
   margin: 18px 0 10px;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
+  font-size: 2.2rem;
 }
 
 .category-card__content p {
@@ -561,10 +573,8 @@ button {
 
 .product-card__body h3 {
   margin: 12px 0 18px;
-  font-size: 1.55rem;
+  font-size: 1.7rem;
   line-height: 1.1;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
 }
 
 .product-card__foot {
@@ -585,6 +595,7 @@ button {
   border-radius: 999px;
   min-height: 42px;
   padding: 0 16px;
+  font-weight: 700;
 }
 
 .story {
@@ -729,6 +740,7 @@ button {
   color: #fff;
   min-height: 48px;
   padding: 0 18px;
+  font-weight: 700;
 }
 
 .footer-bottom {
