@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lark & Lumen brings modern essentials for comfortable, intentional living."
+    />
+    <title>Lark & Lumen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="announcement-bar">
+        <div class="container announcement-bar__inner">
+          <span>Free shipping on orders over $80</span>
+          <span>Fresh arrivals every week</span>
+          <span>30-day returns</span>
+        </div>
+      </div>
+
+      <div class="container nav-bar">
+        <a class="brand" href="#" aria-label="Lark and Lumen home">
+          <span class="brand__mark">L</span>
+          <span class="brand__text">Lark &amp; Lumen</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-item nav-item--mega">
+            <a href="#">Shop</a>
+            <div class="mega-menu" aria-label="Shop categories menu">
+              <div class="mega-menu__group">
+                <span class="mega-menu__label">Living</span>
+                <a href="#">Lighting</a>
+                <a href="#">Textiles</a>
+                <a href="#">Tableware</a>
+                <a href="#">Decor</a>
+              </div>
+              <div class="mega-menu__group">
+                <span class="mega-menu__label">Workspace</span>
+                <a href="#">Desk sets</a>
+                <a href="#">Writing tools</a>
+                <a href="#">Organizers</a>
+                <a href="#">Media</a>
+              </div>
+              <div class="mega-menu__group">
+                <span class="mega-menu__label">Outside</span>
+                <a href="#">Picnic</a>
+                <a href="#">Travel</a>
+                <a href="#">Garden</a>
+                <a href="#">Wellness</a>
+              </div>
+              <div class="mega-menu__promo">
+                <p>New edit</p>
+                <strong>Autumn light</strong>
+                <span>Warm tones, soft storage, and quiet details.</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item"><a href="#">New In</a></div>
+          <div class="nav-item"><a href="#">Best Sellers</a></div>
+          <div class="nav-item"><a href="#">Journal</a></div>
+          <div class="nav-item"><a href="#">Gift Guide</a></div>
+        </nav>
+
+        <div class="nav-tools" aria-label="Quick actions">
+          <button type="button" class="nav-tool">Search</button>
+          <button type="button" class="nav-tool">Account</button>
+          <button type="button" class="nav-tool nav-tool--cart">
+            Cart <span>2</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container" aria-label="Featured collection">
+        <div class="hero__content">
+          <p class="eyebrow">Thoughtful pieces for everyday life</p>
+          <h1>Make your home feel a little softer, a little calmer.</h1>
+          <p class="hero__text">
+            Curated objects that bring warmth to your rooms, structure to your routines, and
+            character to the spaces you use most.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#featured" class="button button--primary">Shop the edit</a>
+            <a href="#story" class="button button--secondary">Our story</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="Brand highlights">
+            <li><strong>18k+</strong><span>happy homes</span></li>
+            <li><strong>4.9/5</strong><span>average rating</span></li>
+            <li><strong>48h</strong><span>dispatch</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-label="Featured home interiors">
+          <div class="visual-panel visual-panel--large">
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+              alt="Warm, minimal living room with neutral decor"
+            />
+          </div>
+          <div class="visual-panel visual-panel--small visual-panel--upper">
+            <img
+              src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+              alt="Natural wood home decor styled on a table"
+            />
+          </div>
+          <div class="visual-panel visual-panel--small visual-panel--lower">
+            <div class="mini-badge">New season</div>
+            <img
+              src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80"
+              alt="Dining room with warm lighting and natural textures"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container" aria-labelledby="category-title">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow--dark">Curated categories</p>
+          <h2 id="category-title">A simpler way to find pieces that fit your life.</h2>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card category-card--sand">
+            <div class="category-card__content">
+              <span>01</span>
+              <h3>Living</h3>
+              <p>Layered textures, soft lighting, and comfortable essentials for the main room.</p>
+              <a href="#">Explore living</a>
+            </div>
+          </article>
+
+          <article class="category-card category-card--sage">
+            <div class="category-card__content">
+              <span>02</span>
+              <h3>Workspace</h3>
+              <p>Desk pieces and organizers that make daily routines feel more grounded.</p>
+              <a href="#">Browse workspace</a>
+            </div>
+          </article>
+
+          <article class="category-card category-card--stone">
+            <div class="category-card__content">
+              <span>03</span>
+              <h3>Outdoors</h3>
+              <p>Warm-weather essentials for slow mornings, long lunches, and easy entertaining.</p>
+              <a href="#">Shop outdoors</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="featured" class="featured container" aria-labelledby="featured-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow eyebrow--dark">Best sellers</p>
+            <h2 id="featured-title">Favourite pieces, chosen for real homes.</h2>
+          </div>
+          <a href="#" class="text-link">View all products</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1512212621149-107e7e4d7d9b?auto=format&fit=crop&w=900&q=80"
+                alt="Oak table lamp in a modern room"
+              />
+              <span class="badge">New</span>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta">
+                <span>Lighting</span>
+                <span>★★★★★ 4.9</span>
+              </div>
+              <h3>Harlow Table Lamp</h3>
+              <div class="product-card__foot">
+                <strong>$84</strong>
+                <button type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+                alt="Textured neutral chair in a living room"
+              />
+              <span class="badge badge--muted">Popular</span>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta">
+                <span>Seating</span>
+                <span>★★★★★ 4.8</span>
+              </div>
+              <h3>Wren Accent Chair</h3>
+              <div class="product-card__foot">
+                <strong>$186</strong>
+                <button type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80"
+                alt="Tray and ceramic decor on counter"
+              />
+              <span class="badge">Limited</span>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta">
+                <span>Decor</span>
+                <span>★★★★★ 5.0</span>
+              </div>
+              <h3>Fern &amp; Tray Set</h3>
+              <div class="product-card__foot">
+                <strong>$62</strong>
+                <button type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80"
+                alt="Dining chair by a window"
+              />
+              <span class="badge badge--muted">Bestseller</span>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__meta">
+                <span>Dining</span>
+                <span>★★★★★ 4.7</span>
+              </div>
+              <h3>Harbor Dining Chair</h3>
+              <div class="product-card__foot">
+                <strong>$128</strong>
+                <button type="button">Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="story" class="story container" aria-labelledby="story-title">
+        <div class="story__image">
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1500&q=80"
+            alt="Warm kitchen with natural materials and soft morning light"
+          />
+        </div>
+
+        <div class="story__content">
+          <p class="eyebrow eyebrow--dark">Our approach</p>
+          <h2 id="story-title">We design around the moments that make a home feel lived in.</h2>
+          <p>
+            The best rooms are never cluttered with excess. They are shaped by the objects that
+            feel useful, welcoming, and quietly beautiful. We search for pieces that feel natural
+            in daily life, from the morning light on a ceramic cup to the ease of a well-made lamp
+            in the evening.
+          </p>
+          <p>
+            That is why we focus on materials that age well, forms that make quiet statements, and
+            textures that help a space breathe. Our collections are meant to support the rhythm of
+            real life rather than interrupt it — comfortable, practical, and full of intention.
+          </p>
+        </div>
+      </section>
+
+      <section class="seo container" aria-labelledby="seo-title">
+        <div class="seo__copy">
+          <p class="eyebrow eyebrow--dark">Made for everyday rituals</p>
+          <h2 id="seo-title">Choose pieces that feel personal, useful, and easy to live with.</h2>
+          <p>
+            We believe that a home becomes more complete when it holds objects that balance beauty with practicality. At Lark &amp; Lumen, we curate furniture, tableware, lighting, and everyday essentials selected to flatter real rooms and support real routines. Each item is chosen for its texture, function, and atmosphere, creating homes that feel warm without being fussy and refined without being rigid.
+          </p>
+          <p>
+            Our collections are built around the idea that comfort should never feel complicated. Thoughtful design can help a space feel calmer, more functional, and more personal from the moment you walk in. Whether you are refreshing one corner or rethinking an entire room, we want every piece to feel considered, lived-in, and genuinely worth keeping.
+          </p>
+        </div>
+
+        <div class="seo__visual" aria-label="Interior styling detail">
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+            alt="Neutral home interior lit by warm daylight"
+          />
+        </div>
+      </section>
+
+      <section class="promo container" aria-label="Seasonal offer">
+        <div class="promo__content">
+          <p class="eyebrow">Autumn edit</p>
+          <h2>Refresh the room you return to most.</h2>
+          <p>Enjoy 20% off warm-weather essentials, layered neutrals, and everyday accents for a softer season.</p>
+        </div>
+        <a href="#" class="button button--primary">Shop the offer</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand" aria-label="Lark and Lumen home">
+            <span class="brand__mark">L</span>
+            <span class="brand__text">Lark &amp; Lumen</span>
+          </a>
+          <p>Modern essentials for calmer rooms and more intentional living.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Shop</h3>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+          <a href="#">Gift cards</a>
+          <a href="#">Sale</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>About</h3>
+          <a href="#">Our story</a>
+          <a href="#">Journal</a>
+          <a href="#">Craft</a>
+          <a href="#">Sustainability</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Follow</h3>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Facebook</a>
+          <a href="#">Newsletter</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Fresh inspiration, thoughtful finds, and practical styling notes.</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" type="email" placeholder="Email address" />
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 Lark &amp; Lumen</span>
+        <div class="legal-links">
+          <a href="#">Privacy</a>
+          <a href="#">Shipping</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
